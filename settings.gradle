@@ -1,0 +1,2 @@
+rootProject.name = "mexc_lp_balancer"
+include ':app'
