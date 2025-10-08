@@ -1,5 +1,6 @@
 package com.example.mexc_lp_balancer
 
+import com.example.mexc_lp_balancer.R
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
