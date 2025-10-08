@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView android:id="@+id/textMode"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Режим" android:textSize="18sp" android:layout_marginEnd="12dp" />
+
+            <Switch android:id="@+id/switchMode"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Test Mode" />
+        </LinearLayout>
+
+        <TextView android:text="API Key:" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/inputApiKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Введите API Key" android:layout_marginBottom="12dp"/>
+
+        <TextView android:text="API Secret:" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/inputApiSecret" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Введите API Secret" android:inputType="textPassword" android:layout_marginBottom="16dp"/>
+
+        <Button android:id="@+id/btnSaveKeys" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сохранить ключи"/>
+        <TextView android:id="@+id/statusLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>
